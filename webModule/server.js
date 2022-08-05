@@ -4,15 +4,14 @@ const url = require('url');
 
 // Create a server
 http
-  .createServer(function (req, res) {
+  .createServer((req, res) => {
     // Parse the request containing file name
-    var pathname = '/'
+    const pathname = '/';
 
     // Print the name of the file for which request is made.
     console.log('Request for ' + pathname + ' received.');
-    console.log(pathname)
     // Read the requested file content from file system
-    fs.readFile("index.html", (err, data) => {
+    fs.readFile('index.html', (err, data) => {
       if (err) {
         console.error(err);
 
