@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-fs.mkdir('/tmp/test', (err) => {
+fs.mkdir('./global_objects', (err) => {
   if (err) {
     console.error(err);
   }
