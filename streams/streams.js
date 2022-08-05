@@ -59,5 +59,4 @@ readerStream.pipe(writerStream);
 
 console.log('Program Ended');
 
-// CHAINING THE STREAMS
 

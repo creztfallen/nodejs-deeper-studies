@@ -20,4 +20,4 @@ import fs from 'fs';
 import net from 'net';
 
 // node -e "process.stdin.pipe(require('net').connect(1338))"
-// net.createServer(socket => socket.pipe(process.stdout)).listen(1338)
+net.createServer(socket => socket.pipe(process.stdout)).listen(1338)
